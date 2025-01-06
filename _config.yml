@@ -1,0 +1,108 @@
+# Starry Theme Based on ParticleX & Particle
+# https://github.com/korilin/hexo-theme-particle
+# https://github.com/theme-particlex/hexo-theme-particlex
+# https://github.com/ErickRen2023/Starry
+
+# Avatar image
+avatar: 
+
+# Favicon
+favicon: 
+
+# Home page background image
+background:
+    - /images/background1.jpg
+
+# Icon is adopts the Font Awesome 6
+# https://fontawesome.com
+
+# The formatter for the site
+formatter:
+    date: YYYY/MM/DD
+
+# Main menu navigation
+menu:
+    Home:
+        name: house
+        theme: solid
+        link: /
+    About:
+        name: id-card
+        theme: solid
+        link: /about
+    Archives:
+        name: box-archive
+        theme: solid
+        link: /archives
+    Categories:
+        name: bookmark
+        theme: solid
+        link: /categories
+    Tags:
+        name: tags
+        theme: solid
+        link: /tags
+
+# Side info card
+card:
+    enable: true
+    description: |
+        Description
+        ...
+    iconLinks:
+    # Here to add your friendLinks
+    friendLinks:
+        ErickRen: https://erickren2023.github.io/
+
+# Footer info
+footer:
+    since: 2025
+    # Customize the server domain name ICP
+    ICP:
+        enable: false
+        code:
+        link:
+
+# Polyfill
+# https://polyfill.io
+polyfill:
+    enable: true
+    features:
+        - default
+
+# Highlight.js
+# https://highlightjs.org
+highlight:
+    enable: true
+    # Here to get the style demo
+    # https://highlightjs.org/demo
+    style: github
+
+# KaTeX math rendering
+math:
+    enable: false
+
+# Image preview
+preview:
+    enable: true
+
+# Search
+search:
+    enable: true
+
+# Giscus
+# https://github.com/giscus/giscus
+giscus:
+    enable: false
+    src: 
+    repo: 
+    repoID: 
+    category: 
+    categoryID: 
+    mapping: 
+    strict: 
+    reactionsEnabled: 
+    emitMetadata: 
+    inputPosition:
+    theme: 
+    lang:

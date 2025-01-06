@@ -1,0 +1,49 @@
+<script src="https://cdn.staticfile.org/vue/3.2.47/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.3.0/css/all.min.css" />
+<link rel="stylesheet" href="<%- url_for("/css/fonts.min.css") %>" />
+<script> const mixins = {}; </script>
+<% if (theme.polyfill.enable) { %>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=<%- theme.polyfill.features %>"></script>
+<% } %>
+
+<!-- highlight support -->
+<% if (theme.highlight.enable) { %>
+<script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/<%- theme.highlight.style %>.min.css"
+/>
+<script src="<%- url_for("/js/lib/highlight.js") %>"></script>
+<% } %>
+
+
+<!-- the math support  -->
+<% if (theme.math.enable) { %>
+<script src="https://cdn.staticfile.org/KaTeX/0.16.4/katex.min.js"></script>
+<script src="https://cdn.staticfile.org/KaTeX/0.16.4/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.16.4/katex.min.css" />
+<script src="<%- url_for("/js/lib/math.js") %>"></script>
+<% } %>
+
+<!-- preview support-->
+<% if (theme.preview.enable) { %>
+<script src="<%- url_for("/js/lib/preview.js") %>"></script>
+<% } %>
+
+<!-- serach support -->
+<% if (type === "archives" && theme.search.enable) { %>
+<script src="<%- url_for("/js/lib/search.js") %>"></script>
+<% } %>
+
+<!-- comment:only for placeholder -->
+<% if (type === "post" && page.comments) { %>
+
+<% } %>
+
+<!-- index -->
+<% if (type === "index") { %>
+<script src="<%- url_for("/js/lib/home.js") %>"></script>
+<% } %>
+
+<!-- css -->
+<link rel="stylesheet" href="<%- url_for("/css/main.css") %>" />
