@@ -4,7 +4,7 @@
 
 动漫风的 [Hexo](https://hexo.io/) 主题，主要由我个人使用。
 
-由[ParticleX](https://github.com/theme-particlex/hexo-theme-particlex) 和 [Particle](https://github.com/korilin/hexo-theme-particle) 主题修改而来.
+由 [ParticleX](https://github.com/theme-particlex/hexo-theme-particlex) 和 [Particle](https://github.com/korilin/hexo-theme-particle) 主题修改而来.
 
 ## 安装
 
