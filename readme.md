@@ -32,6 +32,7 @@ theme: Starry
 May for long time because I'm learning Vue....(I'm backend software engineer)
 
 - Add the support of yearly and monthly archive generator.
+- The math font support for non-ascii character.
 - more...
 
 ## Special  Thanks  To
