@@ -7,9 +7,24 @@
         <span class="loop"></span>
         <span class="info">
             <div class="wrap">
-                <h1><%= config.title %></h1>
-                <h3><%= config.subtitle %></h3>
-                <h5><%= config.description %></h5>
+                <!-- title font -->
+                <% if (theme.pageinfo && theme.pageinfo.titleFont) { %>
+                    <h1 id="page-title" style="font-family: '<%= theme.pageinfo.titleFont %>';"><%= config.title %></h1>
+                <% } else { %>
+                    <h1 id="page-title"><%= config.title %></h1>
+                <% } %>
+                <!-- subtitle font -->
+                <% if (theme.pageinfo && theme.pageinfo.subtitleFont) { %>
+                    <h3 id="page-subtitle" style="font-family: '<%= theme.pageinfo.subtitleFont %>';"><%= config.subtitle %></h3>
+                <% } else { %>
+                    <h3 id="page-subtitle"><%= config.subtitle %></h3>
+                <% } %>
+                <!-- description font -->
+                <% if (theme.pageinfo && theme.pageinfo.descriptionFont) { %>
+                    <h5 id="page-description" style="font-family: '<%= theme.pageinfo.descriptionFont %>';"><%= config.description %></h5>
+                <% } else { %>
+                    <h5 id="page-description"><%= config.description %></h5>
+                <% } %>
             </div>
         </span>
     </div>

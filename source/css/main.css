@@ -831,16 +831,16 @@ ol li {
     #home-head #home-info .info .wrap {
         padding: 25px;
     }
-    #home-head #home-info .info .wrap h1 {
+    #home-head #home-info .info .wrap #page-title {
         font-size: 52px;
         font-weight: bold;
         margin-bottom: 10px;
     }
-    #home-head #home-info .info .wrap h3 {
+    #home-head #home-info .info .wrap #page-subtitle {
         font-size: 24px;
         margin: 10px 0;
     }
-    #home-head #home-info .info .wrap h5 {
+    #home-head #home-info .info .wrap #page-description {
         font-size: 16px;
         margin: 20px 0;
     }
